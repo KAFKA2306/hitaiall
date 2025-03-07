@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アバター＆衣装需要ダッシュボード</title>
+</head>
+<body>
+    
+        <style>
+            .dashboard {
+                font-family: "Segoe UI", Meiryo, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+                margin: 20px;
+                color: #2c3e50;
+            }
+            .section {
+                margin-bottom: 40px;
+                background-color: #f9f9f9;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                padding: 20px;
+            }
+            .section h2 {
+                color: #34495e;
+                border-bottom: 2px solid #2980b9;
+                padding-bottom: 10px;
+                margin-top: 0;
+            }
+            .ranking-table {
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 15px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            }
+            .ranking-table th, .ranking-table td {
+                border: 1px solid #bdc3c7;
+                padding: 12px;
+                text-align: left;
+            }
+            .ranking-table th {
+                background-color: #2980b9;
+                color: white;
+                font-weight: bold;
+            }
+            .ranking-table tr:nth-child(odd) {
+                background-color: #ecf0f1;
+            }
+            .ranking-table tr:nth-child(even) {
+                background-color: #f5f7f8;
+            }
+            .ranking-table tr:hover {
+                background-color: #d6eaf8;
+            }
+            .item-image {
+                width: 120px;
+                height: auto;
+                border-radius: 6px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                transition: transform 0.2s;
+                display: block;
+                margin-bottom: 8px;
+            }
+            .item-image:hover {
+                transform: scale(1.05);
+            }
+            .item-name {
+                font-weight: bold;
+                color: #2980b9;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 4px;
+            }
+            .item-name:hover {
+                text-decoration: underline;
+            }
+            .shop-name {
+                color: #5d6d7e;
+                font-size: 0.9em;
+                display: block;
+            }
+            .price-data {
+                text-align: right;
+                font-family: "Consolas", "Courier New", "MS Gothic", monospace;
+                color: #34495e;
+            }
+            .rank-number {
+                font-weight: bold;
+                text-align: center;
+                background-color: #2980b9;
+                color: white;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+            }
+            .item-cell {
+                min-width: 200px;
+            }
+        </style>
+        <div class="dashboard">
+        <div class="section">
+            <h2>人気アバター＆衣装の組み合わせランキング</h2>
+            <table class="ranking-table">
+                <tr><th>順位</th><th>アバター</th><th>衣装</th><th>件数</th><th>合計金額</th><th>平均価格</th><th>中央値価格</th></tr>
+        <tr><td><div class="rank-number">1</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/70c03f34-f561-4b7a-af1a-6bec13229237/i/6213757/5e9364c0-e81e-4bd8-900a-88703cda408d_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/6213757" class="item-name" target="_blank">オリジナル3Dモデル - ポワン #Powan3D - Senna Studio - BOOTH</a>
+            <span class="shop-name">Senna Studio</span>
+        </td>
+        
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/fd080b93-50c9-4a89-a7f8-30ac4bbe9f44/i/4443215/7a9b8e30-6a01-4986-a4db-d5a9f1ca0ba6_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/4443215" class="item-name" target="_blank">レイヤードパーカー（LAYERD PARKA） - P_Store - BOOTH</a>
+            <span class="shop-name">P_Store</span>
+        </td>
+        <td class="price-data">1</td><td class="price-data">7,000円</td><td class="price-data">7,000円</td><td class="price-data">7,000円</td></tr><tr><td><div class="rank-number">2</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/922e944c-e396-411f-bda4-044626cd0730/i/5331716/1d7cca0a-555c-45c9-9f91-4619d723a9f1_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/5331716" class="item-name" target="_blank">オリジナル3Dモデル『銀杏』 - みらいショップ - BOOTH</a>
+            <span class="shop-name">みらいショップ</span>
+        </td>
+        
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/66f34f45-d82c-4379-baf5-7af8852deead/i/5118037/a047757c-95eb-40ab-a72c-3f96f10d5b84_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/5118037" class="item-name" target="_blank">【VRC想定衣装】Memoriabelle - ふぇざーしーぷ - BOOTH</a>
+            <span class="shop-name">ふぇざーしーぷ</span>
+        </td>
+        <td class="price-data">1</td><td class="price-data">6,000円</td><td class="price-data">6,000円</td><td class="price-data">6,000円</td></tr><tr><td><div class="rank-number">3</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/70c03f34-f561-4b7a-af1a-6bec13229237/i/6213757/5e9364c0-e81e-4bd8-900a-88703cda408d_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/6213757" class="item-name" target="_blank">オリジナル3Dモデル - ポワン #Powan3D - Senna Studio - BOOTH</a>
+            <span class="shop-name">Senna Studio</span>
+        </td>
+        
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/fd080b93-50c9-4a89-a7f8-30ac4bbe9f44/i/4421581/a5c4c310-9d96-4ebc-aaa6-78ad46bc917b_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/4421581" class="item-name" target="_blank">モノクロゴースト - P_Store - BOOTH</a>
+            <span class="shop-name">P_Store</span>
+        </td>
+        <td class="price-data">1</td><td class="price-data">6,000円</td><td class="price-data">6,000円</td><td class="price-data">6,000円</td></tr><tr><td><div class="rank-number">4</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/b1b300fb-f459-487f-8fd8-034cc7694d95/i/4930863/917fb40c-1b94-47c2-b203-0c976a205f94_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/4930863" class="item-name" target="_blank">【3Dmodel】悪魔リーマン【VRChat avatar】 - kaibatu2mm LAB - BOOTH</a>
+            <span class="shop-name">kaibatu2mm LAB</span>
+        </td>
+        
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/a47c4793-3a41-4936-a02d-f471e4d99898/i/5955253/4865c618-160e-448a-a931-97f6a21c5f4a_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/5955253" class="item-name" target="_blank">【3Dモデル】ANUBIS (+HEAD Update!) - DIMGRAY - BOOTH</a>
+            <span class="shop-name">DIMGRAY</span>
+        </td>
+        <td class="price-data">1</td><td class="price-data">3,500円</td><td class="price-data">3,500円</td><td class="price-data">3,500円</td></tr><tr><td><div class="rank-number">5</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/96d1d589-6879-4d30-8891-a2c6b8d64186/i/5132797/68abd8ab-df67-449f-9625-b1b045a04884_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/5132797" class="item-name" target="_blank">オリジナル3Dモデル「瑞希」メニューギミック搭載 - IKUSIA - BOOTH</a>
+            <span class="shop-name">IKUSIA</span>
+        </td>
+        
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/2bbfc6cd-c88d-4f80-8d45-2066fcd51c78/i/6110958/8b4d54d7-58ca-4c53-9a62-f365c4d267e0_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/6110958" class="item-name" target="_blank">🩷本命ニット🩷【15アバター対応】 - てんぱすおおもり - BOOTH</a>
+            <span class="shop-name">てんぱすおおもり</span>
+        </td>
+        <td class="price-data">1</td><td class="price-data">3,500円</td><td class="price-data">3,500円</td><td class="price-data">3,500円</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>人気アバターランキング</h2>
+            <table class="ranking-table">
+                <tr><th>順位</th><th>アバター</th><th>件数</th><th>合計金額</th><th>平均価格</th><th>中央値価格</th></tr>
+        <tr><td><div class="rank-number">1</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/70c03f34-f561-4b7a-af1a-6bec13229237/i/6213757/5e9364c0-e81e-4bd8-900a-88703cda408d_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/6213757" class="item-name" target="_blank">オリジナル3Dモデル - ポワン #Powan3D - Senna Studio - BOOTH</a>
+            <span class="shop-name">Senna Studio</span>
+        </td>
+        <td class="price-data">2</td><td class="price-data">13,000円</td><td class="price-data">6,500円</td><td class="price-data">6,500円</td></tr><tr><td><div class="rank-number">2</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/817e9a9a-020c-4fac-8b21-96f80d6e25cb/i/5650156/95fc778d-3254-45ca-8a6e-2590dc30f87c_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/5650156" class="item-name" target="_blank">【オリジナル3Dモデル】 Sio / しお / ver.2.00 - Chocolate rice - BOOTH</a>
+            <span class="shop-name">Chocolate rice</span>
+        </td>
+        <td class="price-data">2</td><td class="price-data">3,000円</td><td class="price-data">1,500円</td><td class="price-data">1,500円</td></tr><tr><td><div class="rank-number">3</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/922e944c-e396-411f-bda4-044626cd0730/i/5331716/1d7cca0a-555c-45c9-9f91-4619d723a9f1_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/5331716" class="item-name" target="_blank">オリジナル3Dモデル『銀杏』 - みらいショップ - BOOTH</a>
+            <span class="shop-name">みらいショップ</span>
+        </td>
+        <td class="price-data">1</td><td class="price-data">6,000円</td><td class="price-data">6,000円</td><td class="price-data">6,000円</td></tr><tr><td><div class="rank-number">4</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/b1b300fb-f459-487f-8fd8-034cc7694d95/i/4930863/917fb40c-1b94-47c2-b203-0c976a205f94_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/4930863" class="item-name" target="_blank">【3Dmodel】悪魔リーマン【VRChat avatar】 - kaibatu2mm LAB - BOOTH</a>
+            <span class="shop-name">kaibatu2mm LAB</span>
+        </td>
+        <td class="price-data">1</td><td class="price-data">3,500円</td><td class="price-data">3,500円</td><td class="price-data">3,500円</td></tr><tr><td><div class="rank-number">5</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/96d1d589-6879-4d30-8891-a2c6b8d64186/i/5132797/68abd8ab-df67-449f-9625-b1b045a04884_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/5132797" class="item-name" target="_blank">オリジナル3Dモデル「瑞希」メニューギミック搭載 - IKUSIA - BOOTH</a>
+            <span class="shop-name">IKUSIA</span>
+        </td>
+        <td class="price-data">1</td><td class="price-data">3,500円</td><td class="price-data">3,500円</td><td class="price-data">3,500円</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>人気衣装ランキング</h2>
+            <table class="ranking-table">
+                <tr><th>順位</th><th>衣装</th><th>件数</th><th>合計金額</th><th>平均価格</th><th>中央値価格</th></tr>
+        <tr><td><div class="rank-number">1</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/2bbfc6cd-c88d-4f80-8d45-2066fcd51c78/i/6110958/8b4d54d7-58ca-4c53-9a62-f365c4d267e0_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/6110958" class="item-name" target="_blank">🩷本命ニット🩷【15アバター対応】 - てんぱすおおもり - BOOTH</a>
+            <span class="shop-name">てんぱすおおもり</span>
+        </td>
+        <td class="price-data">2</td><td class="price-data">5,000円</td><td class="price-data">2,500円</td><td class="price-data">2,500円</td></tr><tr><td><div class="rank-number">2</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/fd080b93-50c9-4a89-a7f8-30ac4bbe9f44/i/4443215/7a9b8e30-6a01-4986-a4db-d5a9f1ca0ba6_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/4443215" class="item-name" target="_blank">レイヤードパーカー（LAYERD PARKA） - P_Store - BOOTH</a>
+            <span class="shop-name">P_Store</span>
+        </td>
+        <td class="price-data">1</td><td class="price-data">7,000円</td><td class="price-data">7,000円</td><td class="price-data">7,000円</td></tr><tr><td><div class="rank-number">3</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/fd080b93-50c9-4a89-a7f8-30ac4bbe9f44/i/4421581/a5c4c310-9d96-4ebc-aaa6-78ad46bc917b_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/4421581" class="item-name" target="_blank">モノクロゴースト - P_Store - BOOTH</a>
+            <span class="shop-name">P_Store</span>
+        </td>
+        <td class="price-data">1</td><td class="price-data">6,000円</td><td class="price-data">6,000円</td><td class="price-data">6,000円</td></tr><tr><td><div class="rank-number">4</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/66f34f45-d82c-4379-baf5-7af8852deead/i/5118037/a047757c-95eb-40ab-a72c-3f96f10d5b84_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/5118037" class="item-name" target="_blank">【VRC想定衣装】Memoriabelle - ふぇざーしーぷ - BOOTH</a>
+            <span class="shop-name">ふぇざーしーぷ</span>
+        </td>
+        <td class="price-data">1</td><td class="price-data">6,000円</td><td class="price-data">6,000円</td><td class="price-data">6,000円</td></tr><tr><td><div class="rank-number">5</div></td>
+        <td class="item-cell">
+            <img src="https://booth.pximg.net/a47c4793-3a41-4936-a02d-f471e4d99898/i/5955253/4865c618-160e-448a-a931-97f6a21c5f4a_base_resized.jpg" class="item-image" onerror="this.src='https://via.placeholder.com/120x120?text=No+Image'">
+            <a href="https://booth.pm/ja/items/5955253" class="item-name" target="_blank">【3Dモデル】ANUBIS (+HEAD Update!) - DIMGRAY - BOOTH</a>
+            <span class="shop-name">DIMGRAY</span>
+        </td>
+        <td class="price-data">1</td><td class="price-data">3,500円</td><td class="price-data">3,500円</td><td class="price-data">3,500円</td></tr>
+            </table>
+        </div>
+        </div>
+</body>
+</html>
