@@ -36,6 +36,14 @@ https://x.com/buffpuff_BP/status/1895308209784774848/photo/1
 [Twitter](https://x.com/buffpuff_BP/status/1895308209784774848)でも情報を発信中です。フォローやリツイートで応援いただけると嬉しいです。
 
 
-https://docs.google.com/forms/d/e/1FAIpQLScv75DIdYX2bFfYmydLOpyOk9dmvj5g0o-awF_ZwPTcLYM_WA/viewform
-https://effulgent-pixie-ec7b1e.netlify.app/
-https://app.netlify.com/sites/effulgent-pixie-ec7b1e/overview
+## Links
+[https://x.com/buffpuff_BP/status/1895308209784774848](https://x.com/buffpuff_BP/status/1895308209784774848)
+[https://docs.google.com/forms/d/e/1FAIpQLScv75DIdYX2bFfYmydLOpyOk9dmvj5g0o-awF_ZwPTcLYM_WA/viewform
+](https://docs.google.com/forms/d/e/1FAIpQLScv75DIdYX2bFfYmydLOpyOk9dmvj5g0o-awF_ZwPTcLYM_WA/viewform
+)
+[https://effulgent-pixie-ec7b1e.netlify.app/
+](https://effulgent-pixie-ec7b1e.netlify.app/
+)
+[https://app.netlify.com/sites/effulgent-pixie-ec7b1e/overview
+](https://app.netlify.com/sites/effulgent-pixie-ec7b1e/overview
+)
