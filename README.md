@@ -39,14 +39,20 @@ https://x.com/buffpuff_BP/status/1895308209784774848/photo/1
 ## Links
 Twitter
 [https://x.com/buffpuff_BP/status/1895308209784774848](https://x.com/buffpuff_BP/status/1895308209784774848)
+
+
 アンケートフォーム
 [https://docs.google.com/forms/d/e/1FAIpQLScv75DIdYX2bFfYmydLOpyOk9dmvj5g0o-awF_ZwPTcLYM_WA/viewform
 ](https://docs.google.com/forms/d/e/1FAIpQLScv75DIdYX2bFfYmydLOpyOk9dmvj5g0o-awF_ZwPTcLYM_WA/viewform
 )
+
+
 ダッシュボード
 [https://effulgent-pixie-ec7b1e.netlify.app/
 ](https://effulgent-pixie-ec7b1e.netlify.app/
 )
+
+
 (開発者向け)
 [https://app.netlify.com/sites/effulgent-pixie-ec7b1e/overview
 ](https://app.netlify.com/sites/effulgent-pixie-ec7b1e/overview
