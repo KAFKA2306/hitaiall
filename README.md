@@ -32,5 +32,10 @@ A: はい、希望するアバターと衣装の組み合わせごとに新し�
 ## 拡散のお願い
 
 より多くの需要を集めるため、ぜひこの取り組みを拡散してください。お気に入りのアバターの衣装対応が増える可能性が高まります！
+https://x.com/buffpuff_BP/status/1895308209784774848/photo/1
+[Twitter](https://x.com/buffpuff_BP/status/1895308209784774848)でも情報を発信中です。フォローやリツイートで応援いただけると嬉しいです。
 
-[Twitter](https://twitter.com/kafka_vr)でも情報を発信中です。フォローやリツイートで応援いただけると嬉しいです。
+
+https://docs.google.com/forms/d/e/1FAIpQLScv75DIdYX2bFfYmydLOpyOk9dmvj5g0o-awF_ZwPTcLYM_WA/viewform
+https://effulgent-pixie-ec7b1e.netlify.app/
+https://app.netlify.com/sites/effulgent-pixie-ec7b1e/overview
