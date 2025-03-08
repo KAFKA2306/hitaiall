@@ -57,8 +57,7 @@ Twitter
 
 
 ダッシュボード　GPTEngineer版
-[https://lovablehitaiall.lovable.app/
-](https://lovablehitaiall.lovable.app/)
+[https://preview--hitaiallconnect.lovable.app/](https://preview--hitaiallconnect.lovable.app/)
 
 
 
