@@ -1,5 +1,7 @@
 # ヒタイオール - アバター衣装対応希望ランキング
 
+[![Deploy Jekyll with GitHub Pages dependencies preinstalled](https://github.com/KAFKA2306/hitaiall/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/KAFKA2306/hitaiall/actions/workflows/jekyll-gh-pages.yml)
+
 VRChatユーザーの皆様が希望するアバターと衣装の組み合わせをランキング化するサービスです。「このアバターにこの衣装を対応してほしい！」というリクエストを集計し、需要の高い組み合わせを可視化します。
 
 ## 主な特徴
